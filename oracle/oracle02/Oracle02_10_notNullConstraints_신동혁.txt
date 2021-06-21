@@ -1,0 +1,9 @@
+SQL> insert into dept(dname, loc) values('총무부','서울');
+
+1 row created.
+
+SQL> select * from dept;
+
+    DEPTNO DNAME                LOC
+---------- -------------------- --------------------
+           총무부               서울

@@ -1,0 +1,22 @@
+SQL> create table dept (
+  2  deptno number(3),
+  3  dname varchar2(10),
+  4  loc varchar2(10)
+  5  );
+
+Table created.
+
+SQL> insert into dept values(10,'총무부','서울');
+
+1 row created.
+
+SQL> insert into dept values(10,'총무부1','서울1');
+
+1 row created.
+
+SQL> select * from dept;
+
+    DEPTNO DNAME                LOC
+---------- -------------------- --------------------
+        10 총무부               서울
+        10 총무부1              서울1

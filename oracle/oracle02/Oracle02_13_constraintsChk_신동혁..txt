@@ -1,0 +1,130 @@
+SQL> select owner, constraint_name, table_name from user_constraints;
+
+OWNER
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CONSTRAINT_NAME                                              TABLE_NAME
+------------------------------------------------------------ ------------------------------------------------------------
+HR
+REGION_ID_NN                                                 REGIONS
+
+HR
+REG_ID_PK                                                    REGIONS
+
+HR
+COUNTRY_ID_NN                                                COUNTRIES
+
+HR
+COUNTRY_C_ID_PK                                              COUNTRIES
+
+HR
+COUNTR_REG_FK                                                COUNTRIES
+
+HR
+LOC_CITY_NN                                                  LOCATIONS
+
+HR
+LOC_ID_PK                                                    LOCATIONS
+
+HR
+LOC_C_ID_FK                                                  LOCATIONS
+
+HR
+
+OWNER
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CONSTRAINT_NAME                                              TABLE_NAME
+------------------------------------------------------------ ------------------------------------------------------------
+DEPT_NAME_NN                                                 DEPARTMENTS
+
+HR
+DEPT_ID_PK                                                   DEPARTMENTS
+
+HR
+DEPT_LOC_FK                                                  DEPARTMENTS
+
+HR
+JOB_TITLE_NN                                                 JOBS
+
+HR
+JOB_ID_PK                                                    JOBS
+
+HR
+EMP_LAST_NAME_NN                                             EMPLOYEES
+
+HR
+EMP_EMAIL_NN                                                 EMPLOYEES
+
+HR
+EMP_HIRE_DATE_NN                                             EMPLOYEES
+
+HR
+EMP_JOB_NN                                                   EMPLOYEES
+
+OWNER
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CONSTRAINT_NAME                                              TABLE_NAME
+------------------------------------------------------------ ------------------------------------------------------------
+
+HR
+EMP_SALARY_MIN                                               EMPLOYEES
+
+HR
+EMP_EMAIL_UK                                                 EMPLOYEES
+
+HR
+EMP_EMP_ID_PK                                                EMPLOYEES
+
+HR
+EMP_DEPT_FK                                                  EMPLOYEES
+
+HR
+EMP_JOB_FK                                                   EMPLOYEES
+
+HR
+EMP_MANAGER_FK                                               EMPLOYEES
+
+HR
+DEPT_MGR_FK                                                  DEPARTMENTS
+
+HR
+JHIST_EMPLOYEE_NN                                            JOB_HISTORY
+
+
+OWNER
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CONSTRAINT_NAME                                              TABLE_NAME
+------------------------------------------------------------ ------------------------------------------------------------
+HR
+JHIST_START_DATE_NN                                          JOB_HISTORY
+
+HR
+JHIST_END_DATE_NN                                            JOB_HISTORY
+
+HR
+JHIST_JOB_NN                                                 JOB_HISTORY
+
+HR
+JHIST_DATE_INTERVAL                                          JOB_HISTORY
+
+HR
+JHIST_EMP_ID_ST_DATE_PK                                      JOB_HISTORY
+
+HR
+JHIST_JOB_FK                                                 JOB_HISTORY
+
+HR
+JHIST_EMP_FK                                                 JOB_HISTORY
+
+HR
+JHIST_DEPT_FK                                                JOB_HISTORY
+
+HR
+
+OWNER
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CONSTRAINT_NAME                                              TABLE_NAME
+------------------------------------------------------------ ------------------------------------------------------------
+SYS_C004102                                                  EMP_DETAILS_VIEW
+
+
+34 rows selected.

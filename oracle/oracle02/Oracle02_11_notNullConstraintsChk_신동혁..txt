@@ -1,0 +1,17 @@
+SQL> drop table dept;
+
+Table dropped.
+
+SQL> create table dept (
+  2  deptno number(3) not null,
+  3  dname varchar2(10),
+  4  loc varchar2(10)
+  5  );
+
+Table created.
+
+SQL> insert into dept(dname, loc) values('총무부','서울');
+insert into dept(dname, loc) values('총무부','서울')
+*
+ERROR at line 1:
+ORA-01400: cannot insert NULL into ("SCOTT"."DEPT"."DEPTNO")

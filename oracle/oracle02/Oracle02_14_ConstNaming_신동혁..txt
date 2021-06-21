@@ -1,0 +1,30 @@
+SQL> select owner, constraint_name, table_name from user_constraints;
+
+OWNER
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CONSTRAINT_NAME                                              TABLE_NAME
+------------------------------------------------------------ ------------------------------------------------------------
+SCOTT
+SYS_C007000                                                  DEPT
+
+
+SQL> drop table dept;
+
+Table dropped.
+
+SQL> create table dept (
+  2  deptno number(3) constraint dept_deptno_nn not null,
+  3  dname varchar2(10),
+  4  loc varchar2(10)
+  5  );
+
+Table created.
+
+SQL> select owner, constraint_name, table_name from user_constraints;
+
+OWNER
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CONSTRAINT_NAME                                              TABLE_NAME
+------------------------------------------------------------ ------------------------------------------------------------
+SCOTT
+DEPT_DEPTNO_NN                                               DEPT
