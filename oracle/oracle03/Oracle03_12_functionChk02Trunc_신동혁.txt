@@ -1,0 +1,19 @@
+-- TRUNC : 짤림
+
+SQL> select trunc(777.777, 2) as "truncChk" from dual;
+
+  truncChk
+----------
+    777.77
+
+SQL> select trunc(777.777, 0) as "truncChk" from dual;
+
+  truncChk
+----------
+       777
+
+SQL> select trunc(777.777, -2) as "truncChk" from dual;
+
+  truncChk
+----------
+       700

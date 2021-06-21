@@ -1,0 +1,21 @@
+SQL> delete from sawon
+  2  where deptno=10;
+delete from sawon
+*
+ERROR at line 1:
+ORA-02292: integrity constraint (SCOTT.SAWON_SAMGR_FK) violated - child record found
+
+-- 부서 번호가 '10'인 <1, '홍길동', 10, '회장'>을 지우려고 했더니 <2, '한국남', 20, '부장'>에서 samgr = 1에서 <1, '홍길동', 10, '회장'> 과 연결되어 있어서 에러가 발생했다.
+
+SQL> delete from dept
+  2  where deptno=20;
+
+1 row deleted.
+
+-- 'on delete cascade' 쓰게 되면 모체와 연결된 자식들도 지워진다.
+
+SQL> select * from sawon;
+
+     SABUN SANAME                   DEPTNO SAJOB                     SAPAY SAHIRE   SASEX         SAMGR
+---------- -------------------- ---------- -------------------- ---------- -------- ------------ ----------
+         1 홍길동                       10 회장                       5000 80/01/01 남자

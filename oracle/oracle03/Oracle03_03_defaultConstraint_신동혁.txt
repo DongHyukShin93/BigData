@@ -1,0 +1,11 @@
+Table created.
+
+SQL> insert into sawon(sabun,saname) values(1,'홍길동');
+
+1 row created.
+
+SQL> select * from sawon;
+
+     SABUN SANAME                   DEPTNO SAJOB                     SAPAY SAHIRE   SASEX         SAMGR
+---------- -------------------- ---------- -------------------- ---------- -------- ------------ ----------
+         1 홍길동                                                          21/06/08

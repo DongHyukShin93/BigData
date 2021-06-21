@@ -1,0 +1,31 @@
+-- lower : 모든 문자 소문자로
+
+SQL> select lower('Korea') from dual;
+
+LOWER('KOR
+----------
+korea
+
+-- UPPER : 모든 문자 대문자로
+
+SQL> select upper('Korea') from dual;
+
+UPPER('KOR
+----------
+KOREA
+
+-- INITCAP : 
+
+SQL> select initcap('i am d boy') from dual;
+
+INITCAP('IAMDBOY')
+--------------------
+I Am D Boy
+
+-- LENGTH : 문자열의 갯수 반환
+
+SQL> select length('korea') from dual;
+
+LENGTH('KOREA')
+---------------
+              5

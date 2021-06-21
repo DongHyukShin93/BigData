@@ -1,0 +1,58 @@
+-- order by column1, column2, ... asc(ascending == default 값) / desc : descending
+SQL> select sabun, saname
+  2  from sawon
+  3  order by sabun;
+
+     SABUN SANAME
+---------- --------------------
+         1 홍길동
+         2 한국남
+         3 이순신
+         4 이미라
+         5 이순라
+         6 공부만
+         7 놀기만
+         8 채송화
+         9 무궁화
+        10 공부해
+        11 뷰별나
+        12 뷰명한
+        13 무궁화
+        14 채시라
+        15 최진실
+        16 김유신
+        17 이성계
+        18 강감찬
+        19 임꺽정
+        20 깨똥이
+
+20 rows selected.
+
+SQL> select sabun, saname
+  2  from sawon
+  3  order by sabun desc; # , 나 () 필요없음
+
+     SABUN SANAME
+---------- --------------------
+        20 깨똥이
+        19 임꺽정
+        18 강감찬
+        17 이성계
+        16 김유신
+        15 최진실
+        14 채시라
+        13 무궁화
+        12 뷰명한
+        11 뷰별나
+        10 공부해
+         9 무궁화
+         8 채송화
+         7 놀기만
+         6 공부만
+         5 이순라
+         4 이미라
+         3 이순신
+         2 한국남
+         1 홍길동
+
+20 rows selected.

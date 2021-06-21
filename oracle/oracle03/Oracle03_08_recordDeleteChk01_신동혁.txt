@@ -1,0 +1,24 @@
+-- <1,'홍길동','회장'>을 삭제하려고 했더니 오류가 난 이유
+-- : <2,'한국남','부장'>의 samgr가 1로 <1,'홍길동','회장'>의 사번을 참조하기 있기 때문에 오류가 발생했다
+
+SQL> delete from sawon
+  2  where deptno=10;
+delete from sawon
+*
+ERROR at line 1:
+ORA-02292: integrity constraint (SCOTT.SAWON_SAMGR_FK) violated - child record found
+
+
+SQL> delete from sawon
+  2  where deptno=20;
+
+1 row deleted.
+
+SQL> delete from sawon
+  2  where deptno=10;
+
+1 row deleted.
+
+SQL> select * from sawon;
+
+no rows selected

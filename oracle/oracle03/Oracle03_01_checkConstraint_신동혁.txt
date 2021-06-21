@@ -1,0 +1,11 @@
+SQL> insert into sawon values(5, '이순라', 20, '사원', 1200, '1990/05/01', '여자', 3);
+
+1 row created.
+
+SQL> insert into sawon values(3, '이순신', 20, '과장', 3500, '1985/03/01', '남자', 2);
+
+1 row created.
+
+SQL> insert into sawon values(5, '이순라', 20, '사원', 1200, '1990/05/01', '중성', 3);
+
+1 row created.

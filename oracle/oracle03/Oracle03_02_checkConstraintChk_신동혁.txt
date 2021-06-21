@@ -1,0 +1,17 @@
+SCOTT
+SAWON_SASEX_CK                                               SAWON
+
+
+SQL> insert into sawon values(2, '한국남', 20, '부장', 3000, '1988/11/01', '남자', 1);
+
+1 row created.
+
+SQL> insert into sawon values(2, '한국남', 20, '부장', 3000, '1988/11/01', '여자', 1);
+
+1 row created.
+
+SQL> insert into sawon values(2, '한국남', 20, '부장', 3000, '1988/11/01', '중성', 1);
+insert into sawon values(2, '한국남', 20, '부장', 3000, '1988/11/01', '중성', 1)
+*
+ERROR at line 1:
+ORA-02290: check constraint (SCOTT.SAWON_SASEX_CK) violated

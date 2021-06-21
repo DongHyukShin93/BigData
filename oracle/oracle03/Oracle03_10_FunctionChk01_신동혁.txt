@@ -1,0 +1,31 @@
+-- abs는 절대값
+
+SQL> select abs(-10) as "absChk01", abs(10) as "absChk02" from dual;
+
+  absChk01   absChk02
+---------- ----------
+        10         10
+
+-- ceil는 5이상이던 5 미만이던 무조건 올림
+
+SQL> select ceil(3.7) as "ceilChk01", ceil(3.3) as "ceilChk02" from dual;
+
+ ceilChk01  ceilChk02
+---------- ----------
+         4          4
+
+-- floor
+
+SQL> select floor(3.7) as "floorChk01" , floor(3.3) as "floorChk02" from dual;
+
+floorChk01 floorChk02
+---------- ----------
+         3          3
+
+-- round
+
+SQL> select round(3.7) as "roundChk01" , round(3.3) as "foundChk02" from dual;
+
+roundChk01 foundChk02
+---------- ----------
+         4          3

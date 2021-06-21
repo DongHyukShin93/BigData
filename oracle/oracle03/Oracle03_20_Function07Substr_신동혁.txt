@@ -1,0 +1,26 @@
+-- SUBSTR : 중간문자열 반환.
+--   형식] : SUBSTR(문자열, 위치, 길이(반환할 문자 갯수)) - 여기서 위치는 0부터 시작이 아니라 1부터 시작한다
+
+SQL> select substr('happyday',3,3) from dual;
+
+SUBSTR
+------
+ppy
+
+-- INSTR : 문자열의 위치 반환
+--  형식] : INSTR(문자열, 문자열)
+
+SQL> select instr('happyday','ppy') from dual;
+
+INSTR('HAPPYDAY','PPY')
+-----------------------
+                      3
+
+-- REPLACE : 문자열 치환
+--   형식] : REPLACE(문자열, old문자열, new문자열)
+
+SQL> select replace('happyday','ppy','qqy') from dual;
+
+REPLACE('HAPPYDA
+----------------
+haqqyday

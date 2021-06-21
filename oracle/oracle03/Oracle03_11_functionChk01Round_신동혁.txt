@@ -1,0 +1,23 @@
+-- round(실수형, 자리수)
+-- 자리수 :
+--     +n : 소수점이하 n자리에서 반올림
+--     0 : 정수자리에서 반올림
+--     -n : 정수 n번째자리에서 반올림
+
+SQL> select round(777.777, 2) as "roundChk" from dual;
+
+  roundChk
+----------
+    777.78
+
+SQL> select round(777.777, 0) as "roundChk" from dual;
+
+  roundChk
+----------
+       778
+
+SQL> select round(777.777, -2) as "roundChk" from dual;
+
+  roundChk
+----------
+       800

@@ -1,0 +1,40 @@
+-- Wildcards
+--     LIKE operator
+-- OS :
+--   * : 임의의 모든 문자 ex) sys* sys로 시작하는 모든 문자 필터링
+--   ? : 한 개의 문자 의미 ex) ?e* 두번째 글자가 e인 모든 문자 필터링
+
+C:\Windows 디렉터리
+
+2019-12-07  오후 06:14    <DIR>          System
+2019-03-19  오후 01:49               219 system.ini
+2021-06-03  오전 10:41    <DIR>          System32
+2019-12-08  오전 12:00    <DIR>          SystemApps
+2021-05-14  오후 11:15    <DIR>          SystemResources
+2021-05-23  오후 01:41    <DIR>          SysWOW64
+               1개 파일                 219 바이트
+               5개 디렉터리  186,501,881,856 바이트 남음
+
+ C:\Windows 디렉터리
+
+2021-05-14  오전 11:39    <DIR>          debug
+2019-12-07  오후 11:56    <DIR>          Help
+2021-05-10  오후 07:07         1,076,736 HelpPane.exe
+2019-12-07  오후 06:14    <DIR>          Performance
+2021-05-10  오후 07:07           370,176 regedit.exe
+2019-12-07  오후 06:31    <DIR>          Registration
+2019-12-08  오전 12:00    <DIR>          RemotePackages
+2019-12-07  오후 06:14    <DIR>          rescache
+2019-12-07  오후 06:31    <DIR>          Resources
+2019-12-08  오전 12:00    <DIR>          security
+2021-05-10  오후 07:11    <DIR>          ServiceProfiles
+2021-06-02  오전 10:00    <DIR>          ServiceState
+2021-05-14  오전 11:48    <DIR>          servicing
+2021-05-10  오후 07:13    <DIR>          Setup
+2021-05-10  오후 07:17             8,112 setupact.log
+2021-05-10  오후 07:13                 0 setuperr.log
+2021-06-08  오후 01:11    <DIR>          Temp
+2020-12-07  오후 04:28    <DIR>          TextInput
+2019-12-07  오후 06:31    <DIR>          Web
+               4개 파일           1,455,024 바이트
+              15개 디렉터리  186,501,459,968 바이트 남음

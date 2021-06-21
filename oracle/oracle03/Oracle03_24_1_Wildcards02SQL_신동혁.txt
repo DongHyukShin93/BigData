@@ -1,0 +1,15 @@
+-- Wildcards
+--     LIKE operator
+--   % : 임의의 모든 문자 ex) bl% --> bl, black, blue, ...
+--   _ : 한 개의 문자 의미 ex) h_t --> hot, hat, ...
+
+-- sawon Table에서 마지막 이름 '만'인 데이터 출력
+
+SQL> select saname
+  2  from sawon
+  3  where saname like '%만';
+
+SANAME
+--------------------
+놀기만
+공부만
