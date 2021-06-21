@@ -1,0 +1,7 @@
+SQL> delete from membert01;
+
+2 rows deleted.
+
+SQL> select * from membert01;
+
+no rows selected

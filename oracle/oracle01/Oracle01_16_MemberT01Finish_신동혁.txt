@@ -1,0 +1,33 @@
+SQL> create table memberT01 (
+  2  mem_name varchar2(20),
+  3  mem_id varchar2(20),
+  4  mem_pwd varchar2(20),
+  5  mem_email varchar2(30),
+  6  mem_phone varchar2(20),
+  7  mem_addr varchar2(30)
+  8  );
+
+Table created.
+
+SQL> select * from tab;
+
+TNAME                                                        TABTYPE         CLUSTERID
+------------------------------------------------------------ -------------- ----------
+MEMBERT01                                                    TABLE
+
+SQL> desc memberT01;
+ Name
+           Null?    Type
+ ----------------------------------------------------------------------------------------------------------------- -------- ----------------------------------------------------------------------------
+ MEM_NAME
+                    VARCHAR2(20)
+ MEM_ID
+                    VARCHAR2(20)
+ MEM_PWD
+                    VARCHAR2(20)
+ MEM_EMAIL
+                    VARCHAR2(30)
+ MEM_PHONE
+                    VARCHAR2(20)
+ MEM_ADDR
+                    VARCHAR2(30)

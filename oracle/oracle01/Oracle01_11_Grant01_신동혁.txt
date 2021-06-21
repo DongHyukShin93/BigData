@@ -1,0 +1,9 @@
+SQL> grant dba to angel;
+
+Grant succeeded.
+
+SQL> conn angel
+Enter password:
+Connected.
+SQL> show user
+USER is "ANGEL"

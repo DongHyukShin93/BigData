@@ -1,0 +1,7 @@
+SQL> drop table memberT01;
+
+Table dropped.
+
+SQL> select * from tab;
+
+no rows selected

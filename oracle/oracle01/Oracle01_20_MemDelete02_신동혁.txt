@@ -1,0 +1,19 @@
+SQL> delete from membert01
+  2  where mem_id = 'Orange';
+
+0 rows deleted.
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  delete from membert01
+  2* where mem_id = 'orange'
+SQL> /
+
+1 row deleted.
+
+SQL> run
+  1  delete from membert01
+  2* where mem_id = 'orange'
+
+0 rows deleted.
