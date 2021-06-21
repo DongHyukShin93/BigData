@@ -1,0 +1,5 @@
+Python03_17_FormatEx01_신동혁
+
+print( "Error is %d." %98 )
+==>Error is 98.
+ "포맷코드 형식" %값
